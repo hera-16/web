@@ -1,92 +1,75 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'プロジェクト | Portfolio',
   description: '私が取り組んだプロジェクトの一覧です。Web開発、アプリケーション開発など様々な作品をご紹介しています。',
 }
 
-// プロジェクトデータ（実際のプロジェクトでは外部ファイルやCMSから取得）
+// 実際のプロジェクトデータ
 const projects = [
   {
     id: 1,
-    title: 'Eコマースプラットフォーム',
-    description: 'React/Next.jsとStripeを使用したフル機能のEコマースWebサイト。商品管理、決済処理、ユーザー認証機能を実装。',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Stripe', 'PostgreSQL'],
-    category: 'Webアプリケーション',
+    title: 'かなむすび - キッチンカー公式サイト',
+    description: '地元遠賀郡の食材を使用した手作りおむすび専門キッチンカーの公式Webサイト。モダンなデザインで地域の魅力とブランドストーリーを表現。',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'レスポンシブデザイン'],
+    category: 'Webサイト',
     status: '完成',
-    imageColor: 'from-blue-400 to-cyan-400',
-    demoUrl: '#',
-    githubUrl: '#'
+    imageSrc: '/images/projects/kanamusubi.jpg',
+    imageColor: 'from-green-400 to-emerald-400',
+    demoUrl: 'https://hera-16.github.io/kanamusubi/',
+    githubUrl: 'https://github.com/hera-16/kanamusubi'
   },
   {
     id: 2,
-    title: 'タスク管理アプリ',
-    description: 'チーム向けのタスク管理ツール。リアルタイム同期、ドラッグ&ドロップ、通知機能を搭載したSPAアプリケーション。',
-    technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express'],
+    title: 'ポケモン図鑑',
+    description: 'PokeAPIを使用したインタラクティブなポケモン図鑑。検索機能、詳細表示、レスポンシブデザインを実装したSPAアプリケーション。',
+    technologies: ['JavaScript', 'HTML', 'CSS', 'PokeAPI', 'SPA'],
     category: 'Webアプリケーション',
     status: '完成',
-    imageColor: 'from-green-400 to-emerald-400',
-    demoUrl: '#',
-    githubUrl: '#'
+    imageSrc: '/images/projects/pokemon.jpg',
+    imageColor: 'from-yellow-400 to-red-400',
+    demoUrl: 'https://hera-16.github.io/pokemon/',
+    githubUrl: 'https://github.com/hera-16/pokemon'
   },
   {
     id: 3,
-    title: 'ポートフォリオサイト',
-    description: 'Next.js 13のApp Routerを使用したレスポンシブなポートフォリオサイト。SEO最適化とパフォーマンス向上を重視。',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    category: 'Webサイト',
+    title: 'Leaving Work - 勤怠管理システム',
+    description: 'ログイン機能付きの勤怠管理システム。ユーザー認証、管理者ページ、データ管理機能を備えたWebアプリケーション。',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'ユーザー認証', 'フォーム処理'],
+    category: 'Webアプリケーション',
     status: '完成',
-    imageColor: 'from-purple-400 to-pink-400',
-    demoUrl: '#',
-    githubUrl: '#'
+    imageSrc: '/images/projects/leaving-work.jpg',
+    imageColor: 'from-blue-400 to-cyan-400',
+    demoUrl: 'https://hera-16.github.io/leaving-work/',
+    githubUrl: 'https://github.com/hera-16/leaving-work'
   },
   {
     id: 4,
-    title: '天気予報アプリ',
-    description: 'OpenWeather APIを使用した天気予報アプリ。位置情報取得、5日間予報、お気に入り都市機能を実装。',
-    technologies: ['React', 'JavaScript', 'Weather API', 'Chart.js'],
+    title: 'Letteral - Webアプリケーション',
+    description: 'Firebase Hostingを使用してデプロイされたWebアプリケーション。モダンな技術スタックを使用した実用的なアプリケーション。',
+    technologies: ['JavaScript', 'Firebase', 'Hosting', 'Web App'],
     category: 'Webアプリケーション',
     status: '完成',
-    imageColor: 'from-yellow-400 to-orange-400',
-    demoUrl: '#',
-    githubUrl: '#'
-  },
-  {
-    id: 5,
-    title: 'ブログCMS',
-    description: 'Headless CMSとしても使用可能なブログシステム。マークダウンエディター、SEO機能、コメントシステムを搭載。',
-    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'TinyMCE'],
-    category: 'Webアプリケーション',
-    status: '開発中',
-    imageColor: 'from-indigo-400 to-blue-400',
-    demoUrl: '#',
-    githubUrl: '#'
-  },
-  {
-    id: 6,
-    title: 'データ可視化ダッシュボード',
-    description: 'ビジネスメトリクスを可視化するダッシュボード。インタラクティブなチャートとリアルタイムデータ更新機能。',
-    technologies: ['React', 'D3.js', 'Node.js', 'WebSocket', 'PostgreSQL'],
-    category: 'データ分析',
-    status: '開発中',
-    imageColor: 'from-teal-400 to-cyan-400',
-    demoUrl: '#',
+    imageSrc: '/images/projects/letteral.jpg',
+    imageColor: 'from-purple-400 to-pink-400',
+    demoUrl: 'https://letteral-c7ca6.web.app/',
     githubUrl: '#'
   }
 ]
 
-const categories = ['すべて', 'Webアプリケーション', 'Webサイト', 'データ分析']
+const categories = ['すべて', 'Webアプリケーション', 'Webサイト']
 
 export default function Projects() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* ヘッダー */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-400 mb-6">
           Projects
         </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-normal">
           これまでに取り組んだプロジェクトの一覧です。
           様々な技術を使用して、実用的なWebアプリケーションやツールを開発しています。
         </p>
@@ -111,8 +94,20 @@ export default function Projects() {
             key={project.id}
             className="bg-white rounded-lg shadow-sm border overflow-hidden hover:shadow-lg transition-shadow group"
           >
-            {/* プロジェクト画像（グラデーション） */}
-            <div className={`h-48 bg-gradient-to-br ${project.imageColor} relative overflow-hidden`}>
+            {/* プロジェクト画像 */}
+            <div className="h-48 relative overflow-hidden bg-gray-100">
+              {project.imageSrc ? (
+                <Image
+                  src={project.imageSrc}
+                  alt={`${project.title}のスクリーンショット`}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={project.id === 1}
+                />
+              ) : (
+                <div className={`h-full bg-gradient-to-br ${project.imageColor}`}></div>
+              )}
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
               <div className="absolute top-4 right-4">
                 <span
@@ -130,15 +125,15 @@ export default function Projects() {
             {/* プロジェクト情報 */}
             <div className="p-6">
               <div className="flex justify-between items-start mb-2">
-                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
                   {project.title}
                 </h3>
-                <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                <span className="text-xs text-gray-700 bg-gray-200 px-3 py-1 rounded-full font-medium">
                   {project.category}
                 </span>
               </div>
               
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <p className="text-gray-600 mb-4 text-base leading-relaxed font-normal">
                 {project.description}
               </p>
 
@@ -184,7 +179,9 @@ export default function Projects() {
             GitHubでより多くのプロジェクトとソースコードをご確認いただけます。
           </p>
           <a
-            href="#"
+            href="https://github.com/hera-16"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

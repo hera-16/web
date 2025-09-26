@@ -15,8 +15,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Your Name",
-  description: "クリエイティブなプロジェクトと技術的な挑戦を紹介するポートフォリオサイト",
+  title: {
+    default: "Portfolio | hera-16",
+    template: "%s | hera-16 Portfolio"
+  },
+  description: "Web開発者のポートフォリオサイト。かなむすび公式サイト、ポケモン図鑑、勤怠管理システムなど、実際のプロジェクトを紹介しています。",
+  keywords: ["Web開発", "フロントエンド", "JavaScript", "HTML", "CSS", "ポートフォリオ", "hera-16"],
+  authors: [{ name: "hera-16" }],
+  creator: "hera-16",
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    title: "Portfolio | hera-16",
+    description: "Web開発者のポートフォリオサイト。実際のプロジェクトとスキルを紹介しています。",
+    siteName: "hera-16 Portfolio"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio | hera-16",
+    description: "Web開発者のポートフォリオサイト。実際のプロジェクトとスキルを紹介しています。"
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
 };
 
 export default function RootLayout({
