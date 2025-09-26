@@ -23,6 +23,8 @@ export default function Contact() {
     setIsSubmitting(true)
 
     try {
+      console.log('フォーム送信開始:', formData)
+      
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -31,10 +33,18 @@ export default function Contact() {
         body: JSON.stringify(formData),
       })
 
+      console.log('APIレスポンス受信:', {
+        status: response.status,
+        statusText: response.statusText,
+        ok: response.ok
+      })
+
       const result = await response.json()
+      console.log('APIレスポンス内容:', result)
 
       if (response.ok) {
         alert('メッセージが正常に送信されました！')
+        console.log('送信成功 - フォームリセット中')
         // フォームをリセット
         setFormData({
           name: '',
@@ -43,6 +53,7 @@ export default function Contact() {
           message: ''
         })
       } else {
+        console.error('API エラー:', result)
         alert(`エラー: ${result.error}`)
       }
     } catch (error) {
@@ -89,7 +100,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-100">メール</h3>
-                <p className="text-gray-600">k.souta0825@icloud.com</p>
+                <p className="text-gray-600">hera16.contact@gmail.com</p>
               </div>
             </div>
 

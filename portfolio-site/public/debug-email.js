@@ -13,6 +13,7 @@ window.testEmailSend = async function(testData = {}) {
   
   console.log('=== メール送信テスト開始 ===');
   console.log('送信データ:', data);
+  console.log('現在時刻:', new Date().toLocaleString());
   
   try {
     const response = await fetch('/api/contact', {
