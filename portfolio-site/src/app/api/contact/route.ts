@@ -1,6 +1,15 @@
 ﻿import { NextRequest, NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
+const getErrorCode = (error: unknown): string => {
+  if (typeof error === 'object' && error !== null && 'code' in error) {
+    const { code } = error as { code?: unknown }
+    if (typeof code === 'string') return code
+    if (code !== undefined) return String(code)
+  }
+  return 'NO_CODE'
+}
+
 export async function POST(request: NextRequest) {
   try {
     console.log('=== メール送信API開始 ===')
@@ -78,8 +87,8 @@ export async function POST(request: NextRequest) {
     console.error('=== メール送信エラー詳細 ===')
     console.error('完全なエラー:', error)
     
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
-    const errorCode = (error as any)?.code || 'NO_CODE'
+  const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+  const errorCode = getErrorCode(error)
     
     console.error('エラーメッセージ:', errorMessage)
     console.error('エラーコード:', errorCode)

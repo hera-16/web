@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t">
@@ -17,24 +19,24 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-gray-700 mb-4">ナビゲーション</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
+                <Link href="/" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
                   ホーム
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
+                <Link href="/about" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
                   アバウト
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/projects" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
+                <Link href="/projects" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
                   プロジェクト
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
+                <Link href="/contact" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
                   コンタクト
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
