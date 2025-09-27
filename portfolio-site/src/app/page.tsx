@@ -92,12 +92,15 @@ export default function Home() {
               <Image
                 src="/images/projects/kanamusubi.jpg"
                 alt="かなむすび - 手作りおむすび"
-                fill
-                className="object-cover"
+                width={400}
+                height={192}
+                priority
+                className="object-cover w-full h-full"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-100 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 かなむすび
               </h3>
               <p className="text-gray-600 mb-4">
@@ -124,12 +127,15 @@ export default function Home() {
               <Image
                 src="/images/projects/pokemon.jpg"
                 alt="ポケモン図鑑アプリ"
-                fill
-                className="object-cover"
+                width={400}
+                height={192}
+                priority
+                className="object-cover w-full h-full"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-100 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 ポケモン図鑑
               </h3>
               <p className="text-gray-600 mb-4">
@@ -156,12 +162,14 @@ export default function Home() {
               <Image
                 src="/images/projects/leaving-work.jpg"
                 alt="勤怠管理システム"
-                fill
-                className="object-cover"
+                width={400}
+                height={192}
+                className="object-cover w-full h-full"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-100 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 勤怠管理システム
               </h3>
               <p className="text-gray-600 mb-4">

@@ -95,20 +95,17 @@ export default function Projects() {
             className="bg-white rounded-lg shadow-sm border overflow-hidden hover:shadow-lg transition-shadow group"
           >
             {/* プロジェクト画像 */}
-            <div className="h-48 relative overflow-hidden bg-gray-100">
-              {project.imageSrc ? (
-                <Image
-                  src={project.imageSrc}
-                  alt={`${project.title}のスクリーンショット`}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  priority={project.id === 1}
-                />
-              ) : (
-                <div className={`h-full bg-gradient-to-br ${project.imageColor}`}></div>
-              )}
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+            <div className="h-48 relative overflow-hidden">
+              <Image
+                src={project.imageSrc}
+                alt={`${project.title}のスクリーンショット`}
+                width={400}
+                height={192}
+                priority={project.id <= 2}
+                className="object-cover w-full h-full"
+                style={{ width: 'auto', height: 'auto' }}
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
               <div className="absolute top-4 right-4">
                 <span
                   className={`px-3 py-1 rounded-full text-xs font-medium ${
