@@ -7,11 +7,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="sticky top-0 z-50 bg-slate-950/90 border-b border-slate-800 backdrop-blur">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* ロゴ */}
-          <Link href="/" className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+          <Link href="/" className="text-2xl font-bold text-slate-100 hover:text-blue-400 transition-colors">
             Portfolio
           </Link>
 
@@ -19,25 +19,25 @@ export default function Header() {
           <div className="hidden md:flex space-x-8">
             <Link 
               href="/" 
-              className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              className="text-slate-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               ホーム
             </Link>
             <Link 
               href="/about" 
-              className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              className="text-slate-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               About Me
             </Link>
             <Link 
               href="/projects" 
-              className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              className="text-slate-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               プロジェクト
             </Link>
             <Link 
               href="/contact" 
-              className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              className="text-slate-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               コンタクト
             </Link>
@@ -47,7 +47,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+              className="text-slate-300 hover:text-blue-400 focus:outline-none focus:text-blue-400"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -63,31 +63,31 @@ export default function Header() {
         {/* モバイルメニュー */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-900 border border-slate-800 rounded-lg">
               <Link 
                 href="/" 
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-slate-200 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 ホーム
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-slate-200 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Me
               </Link>
               <Link 
                 href="/projects" 
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-slate-200 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 プロジェクト
               </Link>
               <Link 
                 href="/contact" 
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-slate-200 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 コンタクト

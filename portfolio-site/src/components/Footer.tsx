@@ -2,13 +2,13 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 border-t">
+    <footer className="bg-slate-950 border-t border-slate-800">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* ブランド */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold text-gray-700 mb-4">Portfolio</h3>
-            <p className="text-gray-600 text-sm">
+            <h3 className="text-lg font-semibold text-slate-100 mb-4">Portfolio</h3>
+            <p className="text-slate-400 text-sm">
               クリエイティブなプロジェクトと技術的な挑戦を通じて、
               革新的なソリューションを生み出しています。
             </p>
@@ -16,25 +16,25 @@ export default function Footer() {
 
           {/* ナビゲーション */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold text-gray-700 mb-4">ナビゲーション</h3>
+            <h3 className="text-lg font-semibold text-slate-100 mb-4">ナビゲーション</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
+                <Link href="/" className="text-slate-300 hover:text-blue-400 text-sm transition-colors">
                   ホーム
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
+                <Link href="/about" className="text-slate-300 hover:text-blue-400 text-sm transition-colors">
                   アバウト
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
+                <Link href="/projects" className="text-slate-300 hover:text-blue-400 text-sm transition-colors">
                   プロジェクト
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
+                <Link href="/contact" className="text-slate-300 hover:text-blue-400 text-sm transition-colors">
                   コンタクト
                 </Link>
               </li>
@@ -43,13 +43,13 @@ export default function Footer() {
 
           {/* ソーシャルリンク */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold text-gray-700 mb-4">フォローする</h3>
+            <h3 className="text-lg font-semibold text-slate-100 mb-4">フォローする</h3>
             <div className="flex space-x-4">
               <a 
                 href="https://github.com/hera-16" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-800 transition-colors"
+                className="text-slate-300 hover:text-slate-100 transition-colors"
                 aria-label="GitHub"
               >
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -60,8 +60,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-200">
-          <p className="text-center text-sm text-gray-500">
+        <div className="mt-8 pt-8 border-t border-slate-800">
+          <p className="text-center text-sm text-slate-500">
             © {new Date().getFullYear()} Portfolio. All rights reserved.
           </p>
         </div>
