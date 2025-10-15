@@ -10,30 +10,18 @@ export const metadata: Metadata = {
 const projects = [
   {
     id: 1,
-    title: 'かなむすび - キッチンカー公式サイト',
-    description: '地元遠賀郡の食材を使用した手作りおむすび専門キッチンカーの公式Webサイト。モダンなデザインで地域の魅力とブランドストーリーを表現。',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'レスポンシブデザイン'],
-    category: 'Webサイト',
+    title: 'Letteral - Webアプリケーション',
+    description: 'Firebase Hostingを使用してデプロイされたWebアプリケーション。モダンな技術スタックを使用した実用的なアプリケーション。',
+    technologies: ['JavaScript', 'Firebase', 'Hosting', 'Web App'],
+    category: 'Webアプリケーション',
     status: '完成',
-    imageSrc: '/images/projects/kanamusubi.jpg',
-    imageColor: 'from-green-400 to-emerald-400',
-    demoUrl: 'https://hera-16.github.io/kanamusubi/',
-    githubUrl: 'https://github.com/hera-16/kanamusubi'
+    imageSrc: '/images/projects/letteral.jpg',
+    imageColor: 'from-purple-400 to-pink-400',
+    demoUrl: 'https://letteral.vercel.app/',
+    githubUrl: '#'
   },
   {
     id: 2,
-    title: 'ポケモン図鑑',
-    description: 'PokeAPIを使用したインタラクティブなポケモン図鑑。検索機能、詳細表示、レスポンシブデザインを実装したSPAアプリケーション。',
-    technologies: ['JavaScript', 'HTML', 'CSS', 'PokeAPI', 'SPA'],
-    category: 'Webアプリケーション',
-    status: '完成',
-    imageSrc: '/images/projects/pokemon.jpg',
-    imageColor: 'from-yellow-400 to-red-400',
-    demoUrl: 'https://hera-16.github.io/pokemon/',
-    githubUrl: 'https://github.com/hera-16/pokemon'
-  },
-  {
-    id: 3,
     title: 'Leaving Work - 勤怠管理システム',
     description: 'ログイン機能付きの勤怠管理システム。ユーザー認証、管理者ページ、データ管理機能を備えたWebアプリケーション。',
     technologies: ['HTML', 'CSS', 'JavaScript', 'ユーザー認証', 'フォーム処理'],
@@ -45,16 +33,28 @@ const projects = [
     githubUrl: 'https://github.com/hera-16/leaving-work'
   },
   {
+    id: 3,
+    title: 'かなむすび - キッチンカー公式サイト',
+    description: '地元遠賀郡の食材を使用した手作りおむすび専門キッチンカーの公式Webサイト。モダンなデザインで地域の魅力とブランドストーリーを表現。',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'レスポンシブデザイン'],
+    category: 'Webサイト',
+    status: '完成',
+    imageSrc: '/images/projects/kanamusubi.jpg',
+    imageColor: 'from-green-400 to-emerald-400',
+    demoUrl: 'https://hera-16.github.io/kanamusubi/',
+    githubUrl: 'https://github.com/hera-16/kanamusubi'
+  },
+  {
     id: 4,
-    title: 'Letteral - Webアプリケーション',
-    description: 'Firebase Hostingを使用してデプロイされたWebアプリケーション。モダンな技術スタックを使用した実用的なアプリケーション。',
-    technologies: ['JavaScript', 'Firebase', 'Hosting', 'Web App'],
+    title: 'ポケモン図鑑',
+    description: 'PokeAPIを使用したインタラクティブなポケモン図鑑。検索機能、詳細表示、レスポンシブデザインを実装したSPAアプリケーション。',
+    technologies: ['JavaScript', 'HTML', 'CSS', 'PokeAPI', 'SPA'],
     category: 'Webアプリケーション',
     status: '完成',
-    imageSrc: '/images/projects/letteral.jpg',
-    imageColor: 'from-purple-400 to-pink-400',
-    demoUrl: 'https://letteral-c7ca6.web.app/',
-    githubUrl: '#'
+    imageSrc: '/images/projects/pokemon.jpg',
+    imageColor: 'from-yellow-400 to-red-400',
+    demoUrl: 'https://hera-16.github.io/pokemon/',
+    githubUrl: 'https://github.com/hera-16/pokemon'
   }
 ]
 

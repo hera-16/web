@@ -90,8 +90,8 @@ export default function Home() {
           <div className="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:border-blue-500/40 transition">
             <div className="h-48 relative overflow-hidden">
               <Image
-                src="/images/projects/kanamusubi.jpg"
-                alt="かなむすび - 手作りおむすび"
+                src="/images/projects/letteral.jpg"
+                alt="Letteral - チャットアプリ"
                 width={400}
                 height={192}
                 priority
@@ -101,53 +101,18 @@ export default function Home() {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-slate-100 mb-2">
-                かなむすび
+                Letteral
               </h3>
               <p className="text-slate-300 mb-4">
-                地元遠賀郡の食材を使用した手作りおむすび専門キッチンカーの公式サイト
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-green-500/20 text-green-300 text-sm rounded-full">HTML</span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full">CSS</span>
-                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-200 text-sm rounded-full">JavaScript</span>
-              </div>
-              <a
-                href="https://hera-16.github.io/kanamusubi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 font-medium"
-              >
-                サイトを見る →
-              </a>
-            </div>
-          </div>
-
-          <div className="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:border-blue-500/40 transition">
-            <div className="h-48 relative overflow-hidden">
-              <Image
-                src="/images/projects/pokemon.jpg"
-                alt="ポケモン図鑑アプリ"
-                width={400}
-                height={192}
-                priority
-                className="object-cover w-full h-full"
-                style={{ width: 'auto', height: 'auto' }}
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-slate-100 mb-2">
-                ポケモン図鑑
-              </h3>
-              <p className="text-slate-300 mb-4">
-                PokeAPIを使用したインタラクティブなポケモン図鑑Webアプリ
+                Firebase Hostingを使用してデプロイされたWebアプリケーション
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-3 py-1 bg-yellow-500/20 text-yellow-200 text-sm rounded-full">JavaScript</span>
-                <span className="px-3 py-1 bg-red-500/20 text-red-300 text-sm rounded-full">API</span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full">SPA</span>
+                <span className="px-3 py-1 bg-orange-500/20 text-orange-300 text-sm rounded-full">Firebase</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 text-sm rounded-full">Web App</span>
               </div>
               <a
-                href="https://hera-16.github.io/pokemon/"
+                href="https://letteral.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 font-medium"
@@ -164,6 +129,7 @@ export default function Home() {
                 alt="勤怠管理システム"
                 width={400}
                 height={192}
+                priority
                 className="object-cover w-full h-full"
                 style={{ width: 'auto', height: 'auto' }}
               />
@@ -187,6 +153,40 @@ export default function Home() {
                 className="text-blue-400 hover:text-blue-300 font-medium"
               >
                 システムを見る →
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:border-blue-500/40 transition">
+            <div className="h-48 relative overflow-hidden">
+              <Image
+                src="/images/projects/kanamusubi.jpg"
+                alt="かなむすび - 手作りおむすび"
+                width={400}
+                height={192}
+                className="object-cover w-full h-full"
+                style={{ width: 'auto', height: 'auto' }}
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-slate-100 mb-2">
+                かなむすび
+              </h3>
+              <p className="text-slate-300 mb-4">
+                地元遠賀郡の食材を使用した手作りおむすび専門キッチンカーの公式サイト
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-green-500/20 text-green-300 text-sm rounded-full">HTML</span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full">CSS</span>
+                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-200 text-sm rounded-full">JavaScript</span>
+              </div>
+              <a
+                href="https://hera-16.github.io/kanamusubi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 font-medium"
+              >
+                サイトを見る →
               </a>
             </div>
           </div>
