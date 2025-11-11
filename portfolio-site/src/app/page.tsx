@@ -90,6 +90,51 @@ export default function Home() {
           <div className="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:border-blue-500/40 transition">
             <div className="h-48 relative overflow-hidden">
               <Image
+                src="/images/projects/cheerain.jpg"
+                alt="CheeRain - NFT応援プラットフォーム"
+                width={400}
+                height={192}
+                priority
+                className="object-cover w-full h-full"
+                style={{ width: 'auto', height: 'auto' }}
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-slate-100 mb-2">
+                CheeRain
+              </h3>
+              <p className="text-slate-300 mb-4">
+                応援メッセージをNFT化。ブロックチェーン技術を活用した革新的な選手応援プラットフォーム
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full">Next.js</span>
+                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 text-sm rounded-full">Spring Boot</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 text-sm rounded-full">Web3</span>
+              </div>
+              <div className="flex gap-3">
+                <a
+                  href="https://cheerain.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 font-medium"
+                >
+                  アプリを見る →
+                </a>
+                <a
+                  href="/videos/cheerain-demo.mp4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-400 hover:text-purple-300 font-medium"
+                >
+                  動画 →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:border-blue-500/40 transition">
+            <div className="h-48 relative overflow-hidden">
+              <Image
                 src="/images/projects/letteral.jpg"
                 alt="Letteral - チャットアプリ"
                 width={400}

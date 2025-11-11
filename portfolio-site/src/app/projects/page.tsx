@@ -10,6 +10,19 @@ export const metadata: Metadata = {
 const projects = [
   {
     id: 1,
+    title: 'CheeRain - NFT応援プラットフォーム',
+    description: 'ファンの声を選手に届ける新しい応援のカタチ。応援メッセージをNFT化してブロックチェーン上に永久保存。ギラヴァンツ北九州の選手応援プラットフォーム。',
+    technologies: ['Next.js 15', 'React 19', 'TypeScript', 'Spring Boot', 'MySQL', 'Polygon', 'Web3'],
+    category: 'Webアプリケーション',
+    status: '完成',
+    imageSrc: '/images/projects/cheerain.jpg',
+    imageColor: 'from-blue-400 to-purple-400',
+    demoUrl: 'https://cheerain.vercel.app/',
+    githubUrl: 'https://github.com/hera-16/cheerain',
+    demoVideoUrl: '/videos/cheerain-demo.mp4'
+  },
+  {
+    id: 2,
     title: 'Letteral - Webアプリケーション',
     description: 'Firebase Hostingを使用してデプロイされたWebアプリケーション。モダンな技術スタックを使用した実用的なアプリケーション。',
     technologies: ['JavaScript', 'Firebase', 'Hosting', 'Web App'],
@@ -21,7 +34,7 @@ const projects = [
     githubUrl: '#'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Leaving Work - 勤怠管理システム',
     description: 'ログイン機能付きの勤怠管理システム。ユーザー認証、管理者ページ、データ管理機能を備えたWebアプリケーション。',
     technologies: ['HTML', 'CSS', 'JavaScript', 'ユーザー認証', 'フォーム処理'],
@@ -33,7 +46,7 @@ const projects = [
     githubUrl: 'https://github.com/hera-16/leaving-work'
   },
   {
-    id: 3,
+    id: 4,
     title: 'かなむすび - キッチンカー公式サイト',
     description: '地元遠賀郡の食材を使用した手作りおむすび専門キッチンカーの公式Webサイト。モダンなデザインで地域の魅力とブランドストーリーを表現。',
     technologies: ['HTML', 'CSS', 'JavaScript', 'レスポンシブデザイン'],
@@ -45,7 +58,7 @@ const projects = [
     githubUrl: 'https://github.com/hera-16/kanamusubi'
   },
   {
-    id: 4,
+    id: 5,
     title: 'ポケモン図鑑',
     description: 'PokeAPIを使用したインタラクティブなポケモン図鑑。検索機能、詳細表示、レスポンシブデザインを実装したSPAアプリケーション。',
     technologies: ['JavaScript', 'HTML', 'CSS', 'PokeAPI', 'SPA'],
@@ -149,12 +162,26 @@ export default function Projects() {
               <div className="flex gap-3">
                 <a
                   href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 bg-blue-500 text-white text-center py-2 px-4 rounded-md text-sm font-medium hover:bg-blue-400 transition-colors"
                 >
                   デモを見る
                 </a>
+                {project.demoVideoUrl && (
+                  <a
+                    href={project.demoVideoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-purple-500 text-white text-center py-2 px-4 rounded-md text-sm font-medium hover:bg-purple-400 transition-colors"
+                  >
+                    動画
+                  </a>
+                )}
                 <a
                   href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 border border-slate-700 text-slate-200 text-center py-2 px-4 rounded-md text-sm font-medium hover:bg-slate-800 transition-colors"
                 >
                   GitHub
