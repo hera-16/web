@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nCheeRainプロジェクトを追加し、デモ動画機能を実装\n\n- CheeRainプロジェクトをプロジェクト一覧に追加\n- NFT応援プラットフォームの詳細情報を記載\n- デモ動画ボタンを追加（紫色）\n- トップページとプロジェクトページの両方に反映\n- デモ動画ファイル（cheerain-demo.mp4）を配置\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push)",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
