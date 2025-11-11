@@ -27,7 +27,7 @@ const projects = [
     description: 'Firebase Hostingを使用してデプロイされたWebアプリケーション。モダンな技術スタックを使用した実用的なアプリケーション。',
     technologies: ['JavaScript', 'Firebase', 'Hosting', 'Web App'],
     category: 'Webアプリケーション',
-    status: '完成',
+    status: '未完成',
     imageSrc: '/images/projects/letteral.jpg',
     imageColor: 'from-purple-400 to-pink-400',
     demoUrl: 'https://letteral.vercel.app/',
