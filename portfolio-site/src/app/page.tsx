@@ -50,9 +50,9 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-slate-100 mb-4">フロントエンド</h3>
-            <p className="text-slate-300 text-base leading-relaxed font-normal">HTML, CSS, JavaScript, レスポンシブデザイン</p>
+            <p className="text-slate-300 text-base leading-relaxed font-normal">Next.js, React, TypeScript, HTML5, CSS3, JavaScript ES6+, Tailwind CSS</p>
           </div>
-          
+
           <div className="text-center p-8 bg-slate-900 rounded-lg border border-slate-800">
             <div className="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
@@ -60,17 +60,17 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-slate-100 mb-4">バックエンド</h3>
-            <p className="text-slate-300 text-base leading-relaxed font-normal">API連携 (PokeAPI), フォーム処理, Firebase</p>
+            <p className="text-slate-300 text-base leading-relaxed font-normal">Spring Boot, Java 17, MySQL, WebSocket, JWT認証, REST API</p>
           </div>
-          
+
           <div className="text-center p-8 bg-slate-900 rounded-lg border border-slate-800">
             <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-slate-100 mb-4">ツール & DevOps</h3>
-            <p className="text-slate-300 text-base leading-relaxed font-normal">Git, GitHub, GitHub Pages, Firebase Hosting</p>
+            <h3 className="text-xl font-semibold text-slate-100 mb-4">ツール & Web3</h3>
+            <p className="text-slate-300 text-base leading-relaxed font-normal">Git, GitHub, Vercel, Polygon, Web3, Docker</p>
           </div>
         </div>
       </section>
